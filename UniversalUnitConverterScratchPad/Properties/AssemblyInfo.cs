@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[ assembly : AssemblyTitle ( "UniversalUnitConverter" ) ]
+[ assembly : AssemblyTitle ( "UniversalUnitConverterScratchPad" ) ]
 [ assembly : AssemblyDescription ( "" ) ]
 [ assembly : AssemblyConfiguration ( "" ) ]
 [ assembly : AssemblyCompany ( "" ) ]
-[ assembly : AssemblyProduct ( "UniversalUnitConverter" ) ]
+[ assembly : AssemblyProduct ( "UniversalUnitConverterScratchPad" ) ]
 [ assembly : AssemblyCopyright ( "Copyright ©  2017" ) ]
 [ assembly : AssemblyTrademark ( "" ) ]
 [ assembly : AssemblyCulture ( "" ) ]
@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[ assembly : Guid ( "e5d6bf77-2de1-4f1b-bf6b-0f31abc4a7aa" ) ]
+[ assembly : Guid ( "631facd7-9fca-4406-9f33-403727048563" ) ]
 
 // Version information for an assembly consists of the following four values:
 //
