@@ -1,21 +1,23 @@
-﻿namespace UniversalUnitConverter.Units.Length
+﻿#region Usings
+using System.Collections.Generic;
+using ArbitraryPrecision;
+#endregion
+namespace UniversalUnitConverter.Units.Length
 {
     #region Usings
-    using System.Collections.Generic;
-    using ArbitraryPrecision;
     #endregion
     /// <summary></summary>
     public static class Length
     {
         #region Constants
-        private const LengthUnit BaseUnit = LengthUnit.Meter;
+        const LengthUnit BaseUnit = LengthUnit.Meter;
         #endregion
         #region StaticFields
-        private static readonly Dictionary < LengthUnit , BigDecimal > _lengthUnitMap = new Dictionary < LengthUnit , BigDecimal >( );
+        static readonly Dictionary < LengthUnit , BigDecimal > _lengthUnitMap = new Dictionary < LengthUnit , BigDecimal > ();
         #endregion
         #region ConstructorDestructor
         /// <summary>Initializes a new instance of the <see cref = "T:UniversalUnitConverter.Units.Length.Length" /> class.</summary>
-        static Length( )
+        static Length ()
         {
             _lengthUnitMap.Add ( LengthUnit.Meter , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.YottaMeter , BigDecimal.Parse ( "1" ) );
@@ -43,24 +45,24 @@
             _lengthUnitMap.Add ( LengthUnit.Parsec , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.LightYear , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.AstronomicalUnit , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.MIL , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.NauticalLeague_International , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.NauticalLeague_UK , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.League_US , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.NauticalMile_International , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.NauticalMile_UK , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.Mil , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.NauticalLeagueInternational , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.NauticalLeagueUk , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.LeagueUs , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.NauticalMileInternational , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.NauticalMileUk , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Mile , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Mile_USSurvey , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Mile_Roman , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.MileUsSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.MileRoman , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.KiloYard , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Furlong , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Furlong_USSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.FurlongUsSurvey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Chain , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Chain_USSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.ChainUsSurvey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.RamsdenChain , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.GunterChain , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Rod , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Rod_USSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.RodUsSurvey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Perch , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Pole , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.PoppySeed , BigDecimal.Parse ( "1" ) );
@@ -68,19 +70,19 @@
             _lengthUnitMap.Add ( LengthUnit.Span , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Fathom , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Cable , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Fathom_USServey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.FathomUsServey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.FrenchFathom , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Yard , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Foot , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Foot_USSurvey , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Foot_IndianSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.FootUsSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.FootIndianSurvey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.FrenchFoot , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Line , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.FrenchLine , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.PortugueseLine , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.GermanLine , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Link , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Link_USSurvey , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.LinkUsSurvey , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Thou , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Toise , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.Digit , BigDecimal.Parse ( "1" ) );
@@ -127,16 +129,16 @@
             _lengthUnitMap.Add ( LengthUnit.VaraDeTarea , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.VaraConuquera , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.VaraCastellana , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Cubit_Greek , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.LongReed_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Reed_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Cubit_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.LongCubit_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.Span_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.HandBreadth_Bible , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.FingerBreadth_Bible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.CubitGreek , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.LongReedBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.ReedBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.CubitBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.LongCubitBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.SpanBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.HandBreadthBible , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.FingerBreadthBible , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.PlankLength , BigDecimal.Parse ( "1" ) );
-            _lengthUnitMap.Add ( LengthUnit.ElectronRadius_Classic , BigDecimal.Parse ( "1" ) );
+            _lengthUnitMap.Add ( LengthUnit.ElectronRadiusClassic , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.BohrRadius , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.EarthEquatorialRadius , BigDecimal.Parse ( "1" ) );
             _lengthUnitMap.Add ( LengthUnit.EarthPolarRadius , BigDecimal.Parse ( "1" ) );
@@ -152,11 +154,11 @@
         {
             if ( _lengthUnitMap != null )
             {
-            return _lengthUnitMap [ aUnit ];
+                return _lengthUnitMap [ aUnit ];
             }
             if ( _lengthUnitMap != null )
             {
-            return _lengthUnitMap [ BaseUnit ];
+                return _lengthUnitMap [ BaseUnit ];
             }
             return BigDecimal.Zero;
         }

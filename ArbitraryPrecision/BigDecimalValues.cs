@@ -1,11 +1,13 @@
-﻿namespace ArbitraryPrecision
+﻿#region Usings
+using System;
+#endregion
+namespace ArbitraryPrecision
 {
     #region Usings
-    using System;
     #endregion
     /// <summary>Represents the special values a number could take.</summary>
     [ Serializable ]
-    internal enum BigDecimalValues : byte
+    enum BigDecimalValues : byte
     {
         /// <summary>Represents a normal number.</summary>
         Normal = 0 ,

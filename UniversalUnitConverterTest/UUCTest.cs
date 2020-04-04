@@ -1,9 +1,19 @@
-﻿namespace UniversalUnitConverterTest
+#region Usings
+using NUnit.Framework;
+#endregion
+namespace UniversalUnitConverterTest
 {
-    #region Usings
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-    #endregion
-    [ TestClass ]
-    public class BigDecimalAddTest
-    {}
+    public sealed class BigDecimalAddTest
+    {
+        #region Methods
+        [ SetUp ]
+        public void Setup ()
+        {}
+        [ Test ]
+        public void BigDecimalAddTest1 ()
+        {
+            Assert.Pass ();
+        }
+        #endregion
+    }
 }

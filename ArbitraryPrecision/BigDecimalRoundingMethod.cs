@@ -1,7 +1,9 @@
-﻿namespace ArbitraryPrecision
+﻿#region Usings
+using System;
+#endregion
+namespace ArbitraryPrecision
 {
     #region Usings
-    using System;
     #endregion
     /// <summary>Determines the rounding method to be used on the <see cref = "BigDecimal" /> number.</summary>
     /// <remarks></remarks>

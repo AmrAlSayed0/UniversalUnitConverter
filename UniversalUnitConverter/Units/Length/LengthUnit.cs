@@ -56,33 +56,33 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         AstronomicalUnit = 25 ,
         /// <summary></summary>
-        MIL = 26 ,
+        Mil = 26 ,
         /// <summary></summary>
-        NauticalLeague_International = 27 ,
+        NauticalLeagueInternational = 27 ,
         /// <summary></summary>
-        NauticalLeague_UK = 28 ,
+        NauticalLeagueUk = 28 ,
         /// <summary></summary>
-        League_US = 29 ,
+        LeagueUs = 29 ,
         /// <summary></summary>
-        NauticalMile_International = 30 ,
+        NauticalMileInternational = 30 ,
         /// <summary></summary>
-        NauticalMile_UK = 31 ,
+        NauticalMileUk = 31 ,
         /// <summary></summary>
         Mile = 32 ,
         /// <summary></summary>
-        Mile_USSurvey = 33 ,
+        MileUsSurvey = 33 ,
         /// <summary></summary>
-        Mile_Roman = 34 ,
+        MileRoman = 34 ,
         /// <summary></summary>
         KiloYard = 35 ,
         /// <summary></summary>
         Furlong = 36 ,
         /// <summary></summary>
-        Furlong_USSurvey = 37 ,
+        FurlongUsSurvey = 37 ,
         /// <summary></summary>
         Chain = 38 ,
         /// <summary></summary>
-        Chain_USSurvey = 39 ,
+        ChainUsSurvey = 39 ,
         /// <summary></summary>
         RamsdenChain = 40 ,
         /// <summary></summary>
@@ -90,7 +90,7 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         Rod = 42 ,
         /// <summary></summary>
-        Rod_USSurvey = 43 ,
+        RodUsSurvey = 43 ,
         /// <summary></summary>
         Perch = 44 ,
         /// <summary></summary>
@@ -106,7 +106,7 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         Cable = 50 ,
         /// <summary></summary>
-        Fathom_USServey = 51 ,
+        FathomUsServey = 51 ,
         /// <summary></summary>
         FrenchFathom = 52 ,
         /// <summary></summary>
@@ -114,9 +114,9 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         Foot = 54 ,
         /// <summary></summary>
-        Foot_USSurvey = 55 ,
+        FootUsSurvey = 55 ,
         /// <summary></summary>
-        Foot_IndianSurvey = 56 ,
+        FootIndianSurvey = 56 ,
         /// <summary></summary>
         FrenchFoot = 57 ,
         /// <summary></summary>
@@ -130,7 +130,7 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         Link = 62 ,
         /// <summary></summary>
-        Link_USSurvey = 63 ,
+        LinkUsSurvey = 63 ,
         /// <summary></summary>
         Thou = 64 ,
         /// <summary></summary>
@@ -224,25 +224,25 @@ namespace UniversalUnitConverter.Units.Length
         /// <summary></summary>
         VaraCastellana = 109 ,
         /// <summary></summary>
-        Cubit_Greek = 110 ,
+        CubitGreek = 110 ,
         /// <summary></summary>
-        LongReed_Bible = 111 ,
+        LongReedBible = 111 ,
         /// <summary></summary>
-        Reed_Bible = 112 ,
+        ReedBible = 112 ,
         /// <summary></summary>
-        Cubit_Bible = 113 ,
+        CubitBible = 113 ,
         /// <summary></summary>
-        LongCubit_Bible = 114 ,
+        LongCubitBible = 114 ,
         /// <summary></summary>
-        Span_Bible = 115 ,
+        SpanBible = 115 ,
         /// <summary></summary>
-        HandBreadth_Bible = 116 ,
+        HandBreadthBible = 116 ,
         /// <summary></summary>
-        FingerBreadth_Bible = 117 ,
+        FingerBreadthBible = 117 ,
         /// <summary></summary>
         PlankLength = 118 ,
         /// <summary></summary>
-        ElectronRadius_Classic = 119 ,
+        ElectronRadiusClassic = 119 ,
         /// <summary></summary>
         BohrRadius = 120 ,
         /// <summary></summary>

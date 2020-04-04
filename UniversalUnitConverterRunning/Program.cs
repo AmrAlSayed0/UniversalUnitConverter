@@ -1,16 +1,17 @@
-﻿namespace UniversalUnitConverterRunning
+﻿#region Usings
+using ArbitraryPrecision;
+#endregion
+namespace UniversalUnitConverterRunning
 {
     #region Usings
-    using ArbitraryPrecision;
     #endregion
-    internal static class Program
+    static class Program
     {
         #region StaticMethods
-        public static int Main ( string [ ] args )
+        public static int Main ()
         {
-            //ParseTests.Init(  );
-            var a = new BigDecimal ( 5.2 );
-            var b = BigDecimal.Log ( a );
+            BigDecimal a = new BigDecimal ( 5.2 );
+            BigDecimal.Log ( a );
             return 0;
         }
         #endregion
